@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introductory Profile</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--Main Header and Navigation Bar-->
+
+    <header>
+        <h1 class="title"><a href="index.html">Nick Nguyen Intro</a></h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <div class="dropdown">
+                <button onclick="contactInfo()" class="dropbtn">Contact</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="mailto:tonicknguyen08@gmail.com?subject=Prospective%20Partnership">Email Me</a>
+                    <hr class="border">
+                    <a href="tel:503-442-1714">Call Me</a>
+                    <hr class="border">
+                    <a href="#contact">My Location</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <img class="headPic" src="images/wed-pics/wed-pic-couple-holding.jpg"
+            alt="Wedded couple holding each other while smiling">
+
+
+        <div class="gap-sm"></div>
+
+        <!--Introduction -->
+
+
+        <h2>Pleasure to meet you</h2>
+
+        <div class="wrapper">
+            <p>
+                Allow me to introduce myself as Nick, I am currently training to be a software developer and look
+                forward
+                to ignite a new passion in software development as I build new web pages.
+            </p>
+            <p>Highlights of my background:</p>
+            <ul>
+                <li>Lives in Portland, Oregon</li>
+                <li>American born Vietnamese</li>
+                <li>Currently a video interpreter and an amateur web developer</li>
+            </ul>
+            <div class="gap-sm"></div>
+        </div>
+
+
+        <hr>
+        <h2 id="about">About Me</h2>
+        <article class="wrapper">
+
+            <h4>
+                <p>I've started out as an interpreter with a love for languages. Along the way I began to understand
+                    programming
+                    is just another language, however it is considered a formal languge which helps us develop our
+                    problem
+                    solving, logical skills and creativity.</p>
+
+                <p> Eventually, along the way I learned that when we fail is when we
+                    should continue because our failures will become the foundations to our
+                    success.</p>
+
+                <p>Now, I would like to shift my focus towards developing my skills as a software developer and web
+                    development. While pursuing this new career I would like to maintain my passion for learning natural
+                    languages.</p>
+
+                <p>Ideally, I would like to work for a translation company or for a language school to help
+                    develop a webpage or app for learning languages. Alternatively I could focus on the food industry.
+                </p>
+            </h4>
+            <div class="gap-sm"></div>
+        </article>
+
+        <!--Description of desired services for the future-->
+
+        <hr>
+        <h2 id="services">Services</h2>
+        <div class="wrapper">
+            <p>I am currently still a student learning how to apply my skills in coding, but I have committed to
+                learning coding everyday. </p>
+
+            <p> I have grown much more interested in trying to learn the concept of HTML in
+                combination with CSS and JavaScript. I would also like to learn skills in UI/UX design.
+            </p>
+            <p>Below are the following Services I would like to provide:</p>
+            <ol>
+                <li>Subscribe/Lead Generation Page</li>
+                <li>Login Page</li>
+                <li>Interactive Learning</li>
+                <li>Analytics Chart</li>
+                <li>Help/Support Page</li>
+                <li>Product Page/ Product Details Page</li>
+            </ol>
+
+            <div class="gap-sm"></div>
+        </div>
+
+        <hr>
+
+        <!--Contact form, the submit button does not actually work without PHP-->
+
+        <h2>Contact Info</h2>
+
+        <h3 class="wrapper">Please leave your contact information for any inquiries and we will be sure to respond
+            within
+            24 hours!</h3>
+        <section class="container">
+            <div class="item">
+                <form action="need-php-contact-code.php" method="POST">
+                    <label for="name">Name:</label>
+                    <br>
+                    <input type="text" id="name" name="user-name" />
+                    <br>
+                    <label for="mail">E-mail:</label>
+                    <br>
+                    <input type="email" id="mail" name="user-email" placeholder="you@example.com" />
+                    <br>
+                    <label for="phone">Phone #:</label>
+                    <br>
+                    <input type="tel" id="phone" name="user-phone" placeholder="xxx-xxx-xxxx" />
+                    <br>
+                    <textarea id="msg" name="user-message" rows="6"></textarea>
+                    <br>
+                    <button type="submit" class="button">Send Your Message</button>
+                </form>
+            </div>
+
+            <!--Map of location-->
+
+            <div class="item2">
+                <h2 class="map" id="contact">My Location</h2>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31499.76799370394!2d105.7289095!3d9.2914669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a10970b2454ab1%3A0x46135881ddd978c2!2sCafe%20Sa%CC%81ng!5e0!3m2!1sen!2sus!4v1589236252201!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </section>
+
+        <div class="gap-md"></div>
+    </main>
+
+    <!--Social Media Links-->
+
+    <footer>
+        <div id="social-media" class="wrapper">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/jack.ngt.92?ref=bookmarks" target="_blank"><img
+                            src="images/social-media/facebook.png" width="50" alt="Facebook Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tumblr.com/search/c%C3%A0%20ph%C3%AA" target="_blank"><img
+                            src="images/social-media/tumblr.png" width="50" alt="Google+ Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href='https://www.linkedin.com/in/nicknguyen08?trk=profile-badge' target="_blank"><img
+                            src="images/social-media/linkedin.png" width="50" alt="LinkedIn Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/apps/activities?hl=en" target="_blank"><img
+                            src="images/social-media/google-plus.png" width="50" alt="Google+ Link" />
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/hoangkara" target="_blank"><img
+                            src="images/social-media/GitHub-Mark-Light-64px.png" width="50" alt="GitHub Link" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class=wrapper>
+            <p id="copyright">&copy; Copyright</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
